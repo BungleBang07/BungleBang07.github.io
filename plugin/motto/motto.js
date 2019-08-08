@@ -1388,7 +1388,7 @@ function getMingYanHref(){
 }
 
 function getItem(){
-  return eval('(' +(mingyan[parseInt(Math.random()*(mingyan.length-1)+1)])+ ')');
+  return eval('(' +(mingyan[mingyan.length-1])+ ')');
 }
 
 /*
