@@ -138,7 +138,7 @@ jQuery(document).ready(function($) {
 				fontColor = '#000';
 			} else {
 				// 若为深色，把文字设置为白色
-				fontColor = '#fff';
+				fontColor = '#000';
 			}
 
 			// set motto color
