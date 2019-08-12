@@ -135,10 +135,10 @@ jQuery(document).ready(function($) {
 				grayLevel = mainRgb[0] * 0.299 + mainRgb[1] * 0.587 + mainRgb[2] * 0.114;
 			if(grayLevel >= 192) {
 				// 若为浅色，把文字设置为黑色
-				fontColor = '#000';
+				fontColor = '#fff';
 			} else {
 				// 若为深色，把文字设置为白色
-				fontColor = '#000';
+				fontColor = '#fff';
 			}
 
 			// set motto color

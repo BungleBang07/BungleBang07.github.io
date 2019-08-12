@@ -32,6 +32,8 @@
   <!-- leancloud -->
   <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
 <script src="/js/leancloud.js"></script>
+
+  <link rel="stylesheet" href="/live2d/css/live2d.css">
 </head>
 	<body>
 		<!-- Preloader -->
@@ -201,13 +203,25 @@
 		<ul>
 	
 		<li>
-			<a href="http://github.com/" target="_blank">
+			<a href="https://www.weibo.com/" target="_blank">
 				<i class="fa fa-weibo"></i>
 			</a>
 		</li>
 	
 		<li>
-			<a href="http://github.com/" target="_blank">
+			<a href="https://wx.qq.com" target="_blank">
+				<i class="fa fa-wechat"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://im.qq.com" target="_blank">
+				<i class="fa fa-qq"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://www.instagram.com" target="_blank">
 				<i class="fa fa-instagram"></i>
 			</a>
 		</li>
@@ -216,6 +230,7 @@
 
 	</div>
 </nav>
+
 			
 		<!--main-->
 		<main>
@@ -227,7 +242,7 @@
 
 	
 
-		<i class="fa fa-pencil-square-o">总计 0 个 标签</i>
+		<i class="fa fa-pencil-square-o">总计 3 个 标签</i>
 
 	
 	
@@ -236,7 +251,7 @@
 		
 
 			<div class="tags">
-				
+				<a href="/tags/旅行日记/" style="font-size: 16px; color: #000">旅行日记</a> <a href="/tags/日常甜/" style="font-size: 35px; color: #f00">日常甜</a> <a href="/tags/读书笔记/" style="font-size: 16px; color: #000">读书笔记</a>
 			</div>
 
 		
@@ -262,13 +277,25 @@
 		<ul>
 	
 		<li>
-			<a href="http://github.com/" target="_blank">
+			<a href="https://www.weibo.com/" target="_blank">
 				<i class="fa fa-weibo"></i>
 			</a>
 		</li>
 	
 		<li>
-			<a href="http://github.com/" target="_blank">
+			<a href="https://wx.qq.com" target="_blank">
+				<i class="fa fa-wechat"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://im.qq.com" target="_blank">
+				<i class="fa fa-qq"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://www.instagram.com" target="_blank">
 				<i class="fa fa-instagram"></i>
 			</a>
 		</li>
@@ -296,7 +323,26 @@
 			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
 			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
 		</p>
-	</div>		
+	</div>
+	
+	<!-- 血小板 -->
+	<div id="landlord">
+		<div class="message" style="opacity:0"></div>
+		<canvas id="live2d" width="560" height="500" class="live2d"></canvas>
+		<div class="hide-button">隐藏</div>
+	</div>
+
+	<!-- live2d 血小板 -->
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		var message_Path = '/live2d/'
+		var home_Path = 'https://haremu.com/'
+	</script>
+	<script type="text/javascript" src="/live2d/js/live2d.js"></script>
+	<script type="text/javascript" src="/live2d/js/message.js"></script>
+	<script type="text/javascript">
+		loadlive2d("live2d", "/live2d/model/xiaoban/model.json");
+	</script>
 </footer>
 		
 	<!-- set '1' to show motto in all pages! -->
